@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="temp-converter">
+            <h1 class="title">Temparature Converter<i class="ri-thermometer-line"></i></h1>
+            <form id="tempConverter" onsubmit="convertTemperature(); return false";>
+                <input type="number" name="Temparature" id="Temparature" placeholder="Enter the Temparature">
+                <br>
+                <label for="fromUnit">From:</label>
+                <input type="radio" name="fromUnit" id="fromCelsius" value="Celsius" checked>
+                <label for="fromCelsius">Celsius</label>
+                <input type="radio" name="fromUnit" id="fromFahrenheit" value="Fahrenheit">
+                <label for="fromFahrenheit">Fahrenheit</label>
+                <br>
+                <label for="toUnit">To:</label>
+                <input type="radio" name="toUnit" id="toCelsius" value="Celsius">
+                <label for="toCelsius">Celsius</label>
+                <input type="radio" name="toUnit" id="toFahrenheit" value="Fahrenheit" checked>
+                <label for="toFahrenheit">Fahrenheit</label>
+                <br>
+                <button id="convertButton">Convert</button>
+                <h2 id="result">Result: </h2>
+            </form>
+            
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
